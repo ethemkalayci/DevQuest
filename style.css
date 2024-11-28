@@ -1,0 +1,50 @@
+body {
+    color: #e0c6ff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #121212;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#stats {
+    /* Positionnement par défaut */
+    margin-bottom: 30px;
+}
+
+#stats p {
+    font-size: 1.2em;
+}
+
+#actions {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #e0c6ff; /* Même fond que le texte */
+    color: #121212; /* Texte sombre pour contraster avec le fond clair */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Ajout de transition */
+}
+
+button:active {
+    transform: scale(0.95); /* Réduit la taille du bouton lors du clic */
+}
+
+button:disabled {
+    background-color: #7c7c7c; /* Teinte grise pour les boutons désactivés */
+    color: #121212;
+    cursor: not-allowed;
+}
